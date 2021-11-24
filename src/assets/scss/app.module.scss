@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+
+.root {
+  width: 100%;
+  background: #101010;
+  display: flex;
+  padding-left: 88px;
+
+  .content {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+
+    .left_panel {
+      display: flex;
+      width: 60%;
+      background: #f6fafd;
+      border-radius: 40px;
+      overflow: hidden;
+
+      .course_panel {
+        width: 60%;
+      }
+
+      .folder_panel {
+        width: 40%;
+      }
+    }
+
+    .right_panel {
+      width: 40%;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .root {
+    .content {
+      .left_panel {
+        width: 50% !important;
+        flex-direction: column;
+
+        & > div {
+          width: 100% !important;
+        }
+      }
+      .right_panel {
+        width: 50% !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .root {
+    .content {
+      flex-direction: column;
+
+      & > div {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    padding-left: 75px;
+
+    .content {
+      flex-direction: column;
+
+      & > div {
+        width: 100% !important;
+      }
+
+      .left_panel {
+        flex-direction: column;
+
+        & > div {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

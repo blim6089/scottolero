@@ -1,0 +1,77 @@
+.root {
+  background: #fff;
+  padding: 50px 25px;
+  height: 100%;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    & > div {
+      display: flex;
+      align-items: center;
+
+      &:first-child {
+        span {
+          font-family: "DM Serif Text";
+          font-size: 26px;
+          color: #131517;
+          margin-right: 10px;
+        }
+      }
+
+      &:last-child {
+        .plus_button {
+          width: 26px;
+          height: 26px;
+          background: #0c67ff;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: none;
+        }
+
+        .cloud_button {
+          position: relative;
+          margin-right: 8px;
+
+          button {
+            width: 26px;
+            height: 26px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+          }
+
+          span {
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(
+              149.04deg,
+              #ef8029 17.19%,
+              #f07d0f 88.02%
+            );
+            border: 1px solid #dc792b;
+            box-sizing: border-box;
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    padding: 40px 16px;
+  }
+}
